@@ -71,5 +71,20 @@ body{
 /* under line on item */
 .line-on-text{
     text-decoration: line-through;
+ 
+}
+
+
+@media  only screen and (max-width: 992px) {
+    body{
+        width: 100%;
+    }
+    .to-do {
+        width: 100%;
+    }
+    .to-do .todoserch {
+        width: 100%;
+        margin-left: 30px;
+    }
 }
 
