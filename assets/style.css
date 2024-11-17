@@ -1,0 +1,75 @@
+body{
+    margin: 0;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: darkcyan;
+}
+
+.to-do{
+    margin-top: 100px;
+    width: 60%;
+    height: auto;
+    background-color: aqua;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.to-do .todoserch{
+    width: 55%;
+}
+.to-do .todoserch input {
+    margin: 10px 10px 10px 0px;
+    padding: 15px 20px;
+    height: 15px;
+    border-radius: 30px;
+    outline: none;
+    border: 2px solid black;
+    width: 70%;
+    background-color: black;
+    color: white;
+    font-size: larger;
+    font-weight: 600;
+    letter-spacing:1px;
+}
+.to-do .todoserch input::placeholder{
+    font-size: larger;
+    font-weight: 900;
+    color: white;
+}
+ .btn{
+    padding: 15px;
+    border-radius: 20px;
+    background-color: black;
+    color: white;
+    font-weight: 600;
+    font-size: large;
+    transition: 0.5s;
+}
+ .btn:hover{
+    color: black;
+    background-color: white;
+    border: 2px solid black;
+}
+.dotoitemlist ul{
+    list-style: number;
+    color: red;
+}
+.dotoitemlist ul li::marker {
+    color: red;
+  }
+.dotoitemlist ul li{
+  font-size: 50px;
+  font-weight: 700;
+  color: black;
+}
+
+
+
+/* under line on item */
+.line-on-text{
+    text-decoration: line-through;
+}
+
