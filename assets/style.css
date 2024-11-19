@@ -16,11 +16,12 @@ body{
     align-items: center;
     justify-content: center;
     flex-direction: column;
+    border-radius: 30px;
 }
 .to-do .todoserch{
     width: 55%;
 }
-.to-do .todoserch input {
+.to-do .todoserch input,#chang-body-color {
     margin: 10px 10px 10px 0px;
     padding: 15px 20px;
     height: 15px;
@@ -34,6 +35,12 @@ body{
     font-weight: 600;
     letter-spacing:1px;
 }
+#chang-body-color::placeholder{
+    font-size: larger;
+    font-weight: 900;
+    color: white;
+}
+
 .to-do .todoserch input::placeholder{
     font-size: larger;
     font-weight: 900;

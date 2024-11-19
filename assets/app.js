@@ -12,6 +12,7 @@ inputbtn.addEventListener("click", () => {
   makeli.textContent = taskInput;
   document.getElementById("todoinput").value = "";
   remove(makeli)
+  underline(makeli)
 
   // underline(makeli)
 
@@ -28,7 +29,7 @@ function remove(makeli) {
   diletbtn.classList.add("btn")
   makeli.appendChild(diletbtn)
 
-  diletbtn.addEventListener ("click" , () => {
+  diletbtn.addEventListener("click", () => {
     makeli.remove()
   })
 
@@ -36,16 +37,39 @@ function remove(makeli) {
 
 
 
-  let underlineitem = document.createElement("button")
-// underlineitem.addEventListener ("click" , () => {
-//   underline(makeli)
-// })
 
-function underline (makeli) {
+
+function underline(makeli) {
+  let underlineitem = document.createElement("button")
   underlineitem.textContent = "under line"
   underlineitem.classList.add("btn")
-  makeli.classList.add("line-on-text")
-    makeli.appendChild(underlineitem)
+
+  makeli.appendChild(underlineitem)
+
+  underlineitem.addEventListener("click", () => {
+    makeli.classList.add("line-on-text")
+  })
 }
+
+
+
+
+// chang body input
+
+let changinput = document.querySelector("#chang-body-color")
+
+let body = document.querySelector("body")
+
+// console.log(changinput);
+
+
+changinput.addEventListener("input" , () => {
+  let colorvallu = document.querySelector("#chang-body-color").value;
+
+  console.log(colorvallu)
+  
+  body.style.backgroundColor = colorvallu;
+})
+
 
 
